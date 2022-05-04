@@ -1,0 +1,52 @@
+body{
+    margin: 0%;
+    padding: 0;
+    background-color: rgb(209, 234, 255);
+    font-family: sans-serif;
+    
+}
+ul{
+    padding: 0;
+    margin: 0px 100px;
+    width: 700px;
+    list-style: none;
+    background: #8da2de;
+}  
+.main{
+    display: flex;
+    justify-content: space-around;
+
+    justify-items: center;
+    margin-left: 40px;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+}
+ul li a{
+    display: block;
+    padding: 8px 39px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+ul li a:hover{
+    color: rgb(0, 0, 0);
+    background: #e1e1e1;
+}
+ul li ul.dropdown{
+    width: 140px;
+    margin-left: 0px;
+    background: #bdbdbd;
+    display: none;
+    position: absolute;
+   
+}
+ul li:hover ul.dropdown{
+    display: block;	
+}
+ul li ul.dropdown li{
+    display: block;
+}
