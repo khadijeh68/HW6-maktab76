@@ -1,33 +1,33 @@
 //Ex.1
-function accumulatingSum(array){
-    let sum = 0;
-    let res;
-    if (array == []){
-        return [];
-    }else{
-        res = array.map(item => {
-            return sum += item;    
-    }) 
-    }
-    console.log(res);
-}
-accumulatingSum([1,5,7]);
+// function accumulatingSum(array){
+//     let sum = 0;
+//     let res;
+//     if (array == []){
+//         return [];
+//     }else{
+//         res = array.map(item => {
+//             return sum += item;    
+//     }) 
+//     }
+//     console.log(res);
+// }
+// accumulatingSum([1,5,7]);
 
 
 //Ex.2
-// function starRatings(array){
-//     let sum = 0;
-//     let res;
-//     let getSum = array.map((item,index) => item * (index + 1), 0)
-//    .reduce((acc,val) => acc + val ,0);
-//     for (let i of array){
-//         sum += i;
-//     }
-//     res = (getSum/sum).toFixed(2);
-//     return res;    
-// }
-// let array = [0,2,0,1,23];
-// console.log(starRatings(array));
+function starRatings(array){
+    let sum = 0;
+    let res;
+    let getSum = array.map((item,index) => item * (index + 1), 0)
+   .reduce((acc,val) => acc + val ,0);
+    for (let i of array){
+        sum += i;
+    }
+    res = (getSum/sum).toFixed(2);
+    return res;    
+}
+let array = [0,2,0,1,23];
+console.log(starRatings(array));
 
 //EX.3
 // let user = {
