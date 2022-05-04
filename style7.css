@@ -15,38 +15,34 @@ ul{
 .main{
     display: flex;
     justify-content: space-around;
-
     justify-items: center;
     margin-left: 40px;
 }
 
-ul li{
+li{
     display: inline-block;
     position: relative;
     line-height: 30px;
     text-align: center;
 }
-ul li a{
+a{
     display: block;
     padding: 8px 39px;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-ul li a:hover{
+a:hover{
     color: rgb(0, 0, 0);
     background: #e1e1e1;
 }
-ul li ul.dropdown{
+.list{
     width: 140px;
-    margin-left: 0px;
+    margin-left: 2px;
     background: #bdbdbd;
     display: none;
     position: absolute;
    
 }
-ul li:hover ul.dropdown{
+li:hover ul.list{
     display: block;	
-}
-ul li ul.dropdown li{
-    display: block;
 }
